@@ -1,0 +1,63 @@
+/*
+	Primary color: #23395d;
+	Secondary color: #e05a00;
+*/
+
+
+:root {
+	--primary: #23395d;
+	--secondary: #e05a00;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-content: center;
+}
+
+header a {
+	color: var(--primary);
+}
+
+a {
+	text-decoration: none !important;
+}
+
+nav.routes-container {
+	width: 100%;
+	align-content: center;
+  display: grid;
+  /*
+  	TODO:
+  	change this so it is dynamic based on number of elements
+  */
+  grid-template-columns: 10%; 
+  justify-content: center;
+  grid-gap: 10px;
+  align-content: center;
+}
+
+div.single-route {
+	background-color: var(--primary);
+	width: 100%;
+	display: inline-block;
+}
+
+div.single-route a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	/*text-decoration: none !important;*/
+}
+
+div.single-route a img {
+	width: 40%;
+	margin: 10px;
+	color: var(--secondary);
+}
+
+div.single-route a h4 {
+	margin-bottom: 5px;
+	color: var(--secondary);
+}

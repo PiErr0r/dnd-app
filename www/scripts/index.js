@@ -1,7 +1,7 @@
 const createRoute = (route) => {
 	const rDiv = document.createElement("div");
 	rDiv.classList.add("single-route");
-	const rH = document.createElement("h6");
+	const rH = document.createElement("h4");
 	rH.innerText =route.name
 	const rA = document.createElement("a");
 	rA.setAttribute("href", route.path)
@@ -23,7 +23,10 @@ require(["scripts/web_data/routes"], function(_) {
 	const { routes } = _;
 	const routesContainer = document.getElementsByClassName("routes-container")[0];
 	
-	routes.forEach(r => {
+	routes.forEach((r, i) => {
+		if (i === 0) {
+			return;
+		}
 		const singleRoute = createRoute(r);
 		routesContainer.appendChild(singleRoute);
 	});

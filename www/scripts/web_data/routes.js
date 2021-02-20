@@ -1,14 +1,14 @@
 define({
 	routes: [
 		{
-			name: "Initiative tracker",
-			path: "./routes/inittrack.html",
-			img: "dice.svg"
+			name: "Home",
+			path: "./index.html",
+			img: "home-solid.svg"
 		},
 		{
-			name: "More to come...",
-			path: "./index.html",
-			img: false
+			name: "Initiative tracker",
+			path: "./routes/inittrack.html",
+			img: "dice-d20-solid.svg"
 		}
 	] 
 })
