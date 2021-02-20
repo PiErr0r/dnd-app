@@ -107,6 +107,7 @@ define([], function() {
 
 		createInitValue() {
 			const divInitValue = document.createElement("div");
+			divInitValue.setAttribute("title", "Roll + Dex bonus = Initiative");
 			divInitValue.classList.add("init-value");
 			divInitValue.classList.add("input-wrapper");
 
