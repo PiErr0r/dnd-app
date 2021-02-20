@@ -14,11 +14,41 @@
 			<h1>Initiative tracker</h1>
 		</header>
 
-		<main class="init-track">
-			
+		<main>
+			<div class="options">
+				<!-- Button to roll randomly for everyone except the players -->
+				<button id="do-roll" style="font-size: 20px; background-color: #fff; display: inline-block; margin-right: 50px;">Roll!</button>
+				
+				<!-- Button to manually sort the records -->
+				<button id="do-sort" style="font-size: 20px; background-color: #fff; display: inline-block; margin-right: 50px;" disabled="true">Sort</button>
+
+				<!-- Checkbox to decide if you want automatic sorting on or off -->
+				<input type="checkbox" id="auto-sort" name="auto-sort" style="display: inline-block;" checked="true">
+				<label for="auto-sort" style="display: inline-block; font-size: 20px;">Automatic sort</label><br>
+			</div>
+			<div class="init-track">
+			</div>
+			<div class="add-record">
+				<!-- Number of records you wish to add -->
+				<input id="add-record-num" class="add-record-num is-num" type="text" value="1">
+
+				<!-- add selected number of records -->
+				<button class="record-action add-record-btn" id="add-record-btn" style="height: 50px; width: 50px; margin: 0px; padding: 0px; display: block; position: absolute; left: 52%;">
+					<img src="../images/plus-square-regular.svg"/>
+				</button>
+			</div>
 		</main>
 
     <script type="text/javascript" src="../scripts/lib/require.js"></script>
 		<script type="text/javascript" src="../scripts/inittrack.js"></script>
+		<script type="text/javascript">
+
+			// Return false if n is not a number or is out of (min, max) interval
+			const isNotNum = (n, min = 0, max = 10) => {
+				const intN = parseInt(n, 10);
+				return Object.is(intN, NaN) || intN >= max || intN <= min;
+			}
+
+		</script>
 	</body>
 </html> 

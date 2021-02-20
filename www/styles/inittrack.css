@@ -20,7 +20,7 @@ aside {
 }
 
 div.record {
-	height: 30px;
+	height: 40px;
 	margin: 5px 0px;
 }
 
@@ -40,11 +40,16 @@ button.record-action {
 	padding: 0px;
 	margin: 5px;
 	background-color: #fff;
-	/*border: 1px solid var(--primary);*/
+	border: none;
+	outline: none !important;
 }
 
 button.record-action:hover {
-	background-color: #bbb;
+	cursor: pointer;
+}
+
+button.record-action:focus {
+	background-color: #eee;
 }
 
 button.record-action img {
@@ -52,11 +57,16 @@ button.record-action img {
 	width: 100%;
 }
 
+div.init-bonus {
+	display: inline-block;
+	/*width*/
+}
+
 div.init-bonus input {
+	font-size: 20px;
 	background-color: #eee;
-	height: 20px;
-  margin: 0 5px;
-  width: 20px;
+	height: 30px;
+  width: 50px;
   background-color: #eee;
   outline: none !important;
 }
@@ -66,11 +76,25 @@ div.init-bonus input:hover, div.init-bonus input:focus {
 	border-bottom: 1px solid var(--secondary)
 }
 
-div.init-value input {
+button.init-btn {
+	border: none;
+	background-color: #fff;
+	width: 20px;
+	height: 100%;
+	outline: none !important;
+}
+
+button.init-btn:hover {
+	color: #eee;
+	cursor: pointer;
+}
+
+div.init-value input.init-value-input {
+	font-size: 20px;
 	background-color: #eee;
-  height: 20px;
+  height: 30px;
   margin: 0 5px;
-  width: 30px;
+  width: 100px;
   background-color: #eee;
   outline: none !important;
 }
@@ -80,10 +104,22 @@ div.init-value input:hover, div.init-value input:focus {
 	border-bottom: 1px solid var(--secondary)
 }
 
+label.init-label {
+	margin: 0 5px;
+	font-size: 20px;
+}
+
+label.init-label-result {
+	width: 50px;
+	display: inline-block;
+	text-align: left;
+}
+
 input.record-name {
-	height: 20px;
+	font-size: 20px;
+	height: 30px;
   margin: 0 5px;
-  width: 200px;	
+  width: 700px;	
   outline: none !important;
   background-color: #eee;
 	border-bottom: 1px solid var(--secondary)
@@ -94,19 +130,36 @@ input.record-name:hover, input.record-name:focus {
 	border-bottom: 1px solid var(--secondary)
 }
 
-button.init-btn {
-	border: none;
-	background-color: #fff;
-	border: 1px solid var(--primary);
-	width: 20px;
-}
-
 div.input-wrapper {
 	height: 100%;
 	border: none;
 	border-left: 2px solid var(--primary);
 	/*border-bottom: 1px solid var(--primary);*/
-	margin-right: 5px;
-	padding-left: 10px;
+	margin-right: 30px;
+	padding-left: 5px;
 	display: inline-block;
+}
+
+div.input-wrapper-noborder {
+	height: 100%;
+	border: none;
+	/*border-bottom: 1px solid var(--primary);*/
+	margin-right: 10px;
+	padding-left: 5px;
+	display: inline-block;
+}
+
+.add-record-num {
+	height: 50px; 
+	width: 50px; 
+	margin: 0px; 
+	padding: 0px; 
+	display: block; 
+	position: absolute; 
+	left: 48%; 
+	font-size: 25px;
+}
+
+input.is-num {
+	text-align: right;
 }
