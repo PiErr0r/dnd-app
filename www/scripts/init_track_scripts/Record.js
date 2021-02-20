@@ -31,6 +31,7 @@ define([], function() {
 		}
 
 		changeInitBonus(evt, buttonChange) {
+			// had to add this atrocity until I find out how to change this class insted of injecting the value in the element
 			const value = evt === null ? (parseInt(document.getElementById(`${this.className}-init-bonus`).value, 10) + buttonChange) : evt.target.value;
 			if (isNotNum(value, -1000, 1000)) {
 				this.initBonus = 0;
@@ -164,7 +165,6 @@ define([], function() {
 			const cBox = document.createElement("input");
 			cBox.setAttribute("type", "checkbox");
 			cBox.setAttribute("id", `${this.className}-cbox`);
-			//cBox.setAttribute("checked", this.isPlayer);
 			cBox.checked = this.isPlayer
 
 			divCBox.appendChild(cBox);

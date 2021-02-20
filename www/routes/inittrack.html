@@ -37,6 +37,39 @@
 					<img src="../images/plus-square-regular.svg"/>
 				</button>
 			</div>
+			<div class="how-to-use">
+				
+				<h2>How to use</h2>
+				<p>
+					Initially 4 records will be created. Their initiative score and dexterity bonus are set to 0 and their player checkbox is set to true (checkbox on the left - try hovering).
+					<br/>
+					In addition your cursor will focus on the first record. As you fill the names of the players and initiative scores or dexterity bonuses the records will automatically sort themselves.
+					<br/>
+					To disable this automatic sorting because it might get annoying during the filling phase uncheck the <strong>Automatic sort</strong> checkbox.
+					<br />
+					Unchecking the <strong>Automatic sort</strong> checkbox will allow you to click on the <strong>Sort</strong> button which will also sort the records.
+					<br/>
+				</p>
+				<p>
+					<strong>Add</strong> button below the records allows you to add more players/monsters. Records added like this will initially be set as non players and you will focus the first of n records you add
+					<br/>
+					You can specify the number of records you wish to add but you can't add more than 29 records simultaneously.
+					<br/>
+					To <strong>Delete</strong> the records from the list just click on the trash button on the right of each record
+				</p>
+				<p>
+					<strong>Roll</strong> button will randomly roll for all of the records which are not considered players (<strong>Is player</strong> checkbox is unchecked)
+					<br/>
+					The roll is a random roll between 0 and 100 modulo 15 (remainder of division with 15) with added 5 which mean all of the rolls will be between 5 and 19
+					<br/>
+					Test results show that of 10 records almost always one has the highest score and one has the lowest
+					<br/>
+					Formula for the random roll is following:
+					<br/>
+					<pre>roll = 5 + ceil( random(0,100) ) % 15</pre>
+					
+				</p>
+			</div>
 		</main>
 
     <script type="text/javascript" src="../scripts/lib/require.js"></script>

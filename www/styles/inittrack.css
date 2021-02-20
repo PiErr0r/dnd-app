@@ -19,6 +19,17 @@ aside {
 	position: absolute;
 }
 
+div.how-to-use {
+	margin-top: 100px;
+	color: var(--primary);
+}
+
+div.how-to-use p {
+	text-align: left;
+	max-width: 1200px;
+	margin: 10px auto;
+}
+
 div.record {
 	height: 40px;
 	margin: 5px 0px;
