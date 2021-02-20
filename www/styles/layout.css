@@ -1,0 +1,27 @@
+body {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-content: center;
+}
+
+div.routes-container {
+	width: 100%;
+	align-content: center;
+}
+
+div.single-route {
+	background-color: #23395d;
+	width: 10%;
+	display: inline-block;
+}
+
+.single-route a {
+	color: #fff;
+	text-decoration: none !important;
+	width: 100%;
+}
+
+.single-route a img {
+	width: 50%;
+}

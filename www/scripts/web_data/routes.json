@@ -1,0 +1,12 @@
+[
+	{
+		"name": "Initiative tracker",
+		"route": "/init-track",
+		"img": "dice.svg"
+	},
+	{
+		"name": "More to come...",
+		"route": "/",
+		"img": false
+	}
+]
